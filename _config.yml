@@ -9,8 +9,8 @@ googleplus_username: google
 head-title: Your blog
 title: Your blog
 
-baseurl: "/materialize-jekyll"    # the subpath of your site, "/blog"
-url: ""
+baseurl: ""    # the subpath of your site, "/blog"
+url: "https://sunryul0423github.io"
 
 # footer 
 description: "I know that what I'm doing looks stupid, but I'm a big boy and really want to do this."
