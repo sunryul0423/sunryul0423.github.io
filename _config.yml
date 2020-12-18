@@ -1,67 +1,60 @@
-# Site settings
+title: Your awesome title
+author: GitHub User
+email: your-email@domain.com
+description: > # this means to ignore newlines until "show_exerpts:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+show_excerpts: true # set to true to show excerpts on the homepage
 
-author: Yourname
-email: example@email.com
-twitter_username: twitter
-github_username:  github
-googleplus_username: google
-
-head-title: Your blog
-title: Your blog
-
-baseurl: ""    # the subpath of your site, "/blog"
-url: "https://sunryul0423github.io"
-
-# footer 
-description: "I know that what I'm doing looks stupid, but I'm a big boy and really want to do this."
-
-favo: "春梦随云散，飞花逐水流"
-descrpt: "“巧者劳而智者忧，无能者无所求，饱食而遨游，泛若不系之舟”  ——《南华经》"
-
-
-#
-# Build settings
-#
-
-#exclude: [vendor]
-
-markdown: kramdown
-highlighter: rouge
-
-kramdown:
-  input: GFM
-  hard_wrap: false
-  highlight: true
-  auto_ids:  true
-
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 sass:
-  style: compressed
+  sass_dir: _sass
+plainwhite:
+  name: Adam Denisov
+  tagline: Developer. Designer
+  date_format: "%b %-d, %Y"
+  sitemap: true # set to true to generate sitemap.xml content
+  search: true # set to true to enable searchbar
+  dark_mode: true # set to true to add dark mode toggle
+  portfolio_image: "assets/portfolio.png" # the path from the base directory of the site to the image to display (no / at the start)
+  html_lang: "en" # set the lang attribute of the <html> tag for the pages. See here for a list of codes: https://www.w3schools.com/tags/ref_country_codes.asp
+  condensed_mobile:
+    #- home
+    - page
+    - post
+  # generate social links in footer
+  social_links:
+    twitter: samarsault
+    github:  samarsault
+    linkedIn: in/samarsault
+    #rss: rss
+    #dribbble: jekyll
+    #flickr:   jekyll
+    #instagram: jekyll
+    #pinterest: jekyll
+    #youtube: jekyll
+    #facebook: jekyll
+    #soundcloud: jekyll
+    #telegram: jekyll
+    #gitlab: jekyll
 
-permalink: /posts/:categories/:title.html
+    # Mastodon instances
+    # mastodon:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
 
-paginate: 7
-#paginate_path: 'page/:num'
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.md
 
-gems: [jekyll-paginate, jekyll-last-modified-at, jemoji]
+# Build settings
+theme: plainwhite
 
-
-#
-# Custom
-#
-
-# Color
-# All css class, see: http://materializecss.com/color.html
-header-color: "indigo lighten-1"
-head-theme-color: "#5c6bc0"     # MUST in hex format, may the same as header-color. This color is for android chrome browser.
-
-footer-color: "indigo lighten-1"
-footer-button-color: "indigo lighten-2"
-footer-link-color: "red-text text-accent-1"
-
-share-button-color: "pink"
-share-button-small-color: ""
-
-
-##
-#excerpt_separator: <!-- excerpt_end -->       # for post.excerpt
-
+plugins:
+  - jekyll-seo-tag
+#  - jekyll-feed

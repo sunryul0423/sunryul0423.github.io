@@ -1,6 +1,4 @@
-source 'https://rubygems.org'
-gem 'jekyll'
-gem 'nokogiri'
-gem 'jekyll-paginate'
-gem 'jekyll-last-modified-at'
-gem 'jemoji'
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+gem "plainwhite"
